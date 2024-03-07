@@ -30,29 +30,6 @@ data = []
 labels = []
 
 
-
-# for idx, c in enumerate(Category):
-#     path = os.path.join(Directory, c)
-#     subdirectories = os.listdir(path)  # Get list of subdirectories (e.g., ["mohamed", "another_subdirectory"])
-
-#     for subdirectory in subdirectories:
-#         subdirectory_path = os.path.join(path, subdirectory)
-#         image_files = os.listdir(subdirectory_path)  # Get list of image files in the subdirectory
-
-#         file_data = []  # Array list to store images of each file
-
-#         for img_file in image_files:
-#             img_path = os.path.join(subdirectory_path, img_file)
-#             image = load_img(img_path,
-#                              target_size=(224, 224))  # Assuming the target size is (224, 224), adjust as necessary
-#             image = img_to_array(image)
-#             image = preprocess_input(image)
-
-#             file_data.append(image)
-
-#         data.append(file_data)  # Add the array list of images for the current file
-#         labels.append(f"{L[idx]}")
-
 for idx, signer in enumerate(Signers):
     signer_path = os.path.join(Directory, signer)
     sentences_folders = os.listdir(signer_path)  # Get list of sentence folders
