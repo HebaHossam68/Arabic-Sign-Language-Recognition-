@@ -36,13 +36,5 @@ Our ASLR system captures Arabic sign language gestures in **real-time** and tran
 
 ---
 
-## 🧩 System Architecture
 
-```mermaid
-graph TD
-A[Camera Input] --> B[Frame Preprocessing]
-B --> C[Deep Learning Model (ResNet50 / MobileNetV2)]
-C --> D[Gesture Classification]
-D --> E[Arabic Text Generation]
-E --> F[Display on Flutter App]
 
